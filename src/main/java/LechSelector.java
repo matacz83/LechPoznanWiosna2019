@@ -31,6 +31,7 @@ public class LechSelector implements LechSelectorInterface {
         List<Kadra> result = this.pilkarze
                 .stream()
                 .sorted((p1, p2) -> p1.getKraj().compareTo(p2.getKraj()))
+                .filter(kadra -> kadra.getKraj().equals(countryName))
                 .collect(Collectors.toList());
         return result;
     }
