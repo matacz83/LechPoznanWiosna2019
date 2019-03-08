@@ -1,4 +1,4 @@
-        package models;
+package models;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -61,4 +61,11 @@ public class Kadra {
         this.exclub = exclub;
     }
 
+    @Override
+    public String toString() {
+        return
+                imie +" "+ nazwisko + ", kraj: " + kraj +
+                        ", rocznik: " + rok +
+                        ", poprzedni klub: " + exclub +"\n";
+    }
 }
