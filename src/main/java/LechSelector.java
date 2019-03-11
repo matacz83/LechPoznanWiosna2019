@@ -3,9 +3,7 @@ import models.Kadra;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class LechSelector implements LechSelectorInterface {
@@ -82,14 +80,14 @@ public class LechSelector implements LechSelectorInterface {
 
     @Override
     public void getOldestPlayer() {
-    /*double maxRok = this.pilkarze
-            .stream()*/
+        List<Kadra> result = getPlayersByYear();
+        System.out.println(result.get(0));
     }
 
     @Override
     public void getYoungestPlayer() {
-
+        List<Kadra> result = getPlayersByYear();
+        System.out.println(result.get(getPlayersByYear().size() - 1));
     }
-
 
 }

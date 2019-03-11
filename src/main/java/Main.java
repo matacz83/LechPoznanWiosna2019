@@ -30,6 +30,12 @@ public class Main {
         System.out.println("\n==ŚREDNI WIEK PIŁKARZY LECHA POZNAŃ (WIOSNA 2019)==");
         lechSelector.getAverageAge();
 
+        System.out.println("\n==NAJSTARSZY ZAWODNIK LECHA POZNAŃ (WIOSNA 2019)==");
+        lechSelector.getOldestPlayer();
+
+        System.out.println("\n==NAJMŁODSZY ZAWODNIK LECHA POZNAŃ (WIOSNA 2019)==");
+        lechSelector.getYoungestPlayer();
+
         System.out.println("\n==LISTA PIŁKARZY LECHA POZNAŃ (WIOSNA 2019) Z WYBRANEGO KRAJU==");
         System.out.print("Podaj nazwę kraju, by uzyskać listę piłkarzy Lecha z tego kraju: ");
         Scanner scanner = new Scanner(System.in);
